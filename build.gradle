@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'maven-publish'
+
+group 'com.hczhang'
+version '0.1'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Cassandra Driver
+    compile 'com.datastax.cassandra:cassandra-driver-core:2.1.4'
+
+    // Commons Lib
+    compile 'org.apache.commons:commons-lang3:3.3.2'
+
+    // Test lib
+    testCompile 'org.testng:testng:6.9.4'
+    testCompile 'org.mockito:mockito-core:1.9.5'
+}
