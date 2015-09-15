@@ -9,6 +9,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by steven on 4/11/14.
+ * A template class, inspired by spring jdbc template.
  */
 public class CassandraTemplate {
 
